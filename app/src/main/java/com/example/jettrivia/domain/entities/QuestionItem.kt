@@ -1,10 +1,10 @@
-package com.example.jettrivia.model
+package com.example.jettrivia.domain.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "question_table")
-data class Question(
+data class QuestionItem(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val question: String,
